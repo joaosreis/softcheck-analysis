@@ -5,24 +5,25 @@
 (generate_opam_files true)
 
 (source
- (uri "git+https://github.com/releaselab/softcheck-analysis.git"))
+ (uri "git+https://github.com/joaosreis/softcheck-analysis.git"))
 
-(bug_reports "https://github.com/releaselab/softcheck-analysis/issues")
+(bug_reports "https://github.com/joaosreis/softcheck-analysis/issues")
 
-(homepage "https://github.com/releaselab/softcheck-analysis")
+(homepage "https://github.com/joaosreis/softcheck-analysis")
 
 (license MIT)
 
-(authors "Jo\195\163o Santos Reis <joao.reis@ubi.pt>")
+(authors "Jo\195\163o Santos Reis <joaosreis@outlook.pt>")
 
-(maintainers "Jo\195\163o Santos Reis <joao.reis@ubi.pt>")
+(maintainers "Jo\195\163o Santos Reis <joaosreis@outlook.pt>")
 
 (package
  (name softcheck-analysis)
  (synopsis "Example analyses for the Softcheck platform")
  (depends
   (dune :build)
-  base
+  (core
+   (>= 0.15))
   softcheck
   lattices
   ppx_deriving

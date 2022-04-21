@@ -1,0 +1,4 @@
+pin-depends: [
+    ["softcheck.dev" "git+https://github.com/joaosreis/softcheck.git"]
+    ["lattices.dev" "git+https://github.com/joaosreis/ocaml-lattices.git"]
+]
